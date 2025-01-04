@@ -127,11 +127,11 @@
         <img class="centrada" src="../assets/images/URISKIN.png" >
     </div>
     <style>
-      /* Clase para centrar el texto */
+      /* APARTADO 2. TEXTO CENTRADO*/
       .textocentrado {
-          text-align: center; /* Centra horizontalmente el texto */
-          font-size: 15px; /* Tamaño del texto (opcional) */
-          color: #428EC6; /* Color del texto (opcional) */
+          text-align: center; 
+          font-size: 15px; 
+          color: #428EC6; 
       }
   </style>
   <p class="textocentrado">uriskin es un proyecto que se enfoca en la creación de una marca de skincare coreana,
@@ -141,45 +141,126 @@
     en todas sus piezas y comunicación.</p>
     <p class="textocentrado"> El concepto de la marca es ofrecer 10 productos diferentes que conforman la aclamada "rutina de cuidado de la piel coreana", la cual se considera una de las mejores y más efectivas en la actualidad.</p>
   
-    <style>
-      /* Estilo específico para el contenedor del grid */
+    <style> /* COMPOSICIÓN DE DOS COLUMNAS PARA HABALR DEL LOGOTIPO */
+    
       .grid-container {
           display: grid;
-          grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
-          gap: 20px; /* Espacio entre las columnas */
-          align-items: center; /* Centra verticalmente los elementos */
-          max-width: 800px; /* Ancho máximo */
-          margin: 20px auto; /* Centrar el grid en la página */
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          align-items: center; 
+          max-width: 9000px; 
+          margin: 20px auto; 
       }
 
       .grid-container img {
-          width: 100%; /* La imagen ocupa el ancho completo de su columna */
-          border-radius: 8px; /* Bordes redondeados */
+          width: 100%; 
+          border-radius: 8px; 
       }
 
       .grid-container .text {
-          font-family: Arial, sans-serif;
-          font-size: 16px;
+          font-family:'Neue Montreal', sans-serif ;
+          font-size: 15px;
           line-height: 1.5;
-          color: #333;
+          color: #428EC6;
       }
   </style>
     <div class="grid-container">
-      <img src="https://via.placeholder.com/400" alt="Ejemplo de Imagen">
+      <img src="../assets/images/LOGOTIPO2.jpg" >
       <div class="text">
-          <h2>Título del Texto</h2>
-          <p>Este es un ejemplo de un texto colocado junto a una imagen usando un grid de dos columnas en HTML y CSS. Este diseño es ideal para resaltar contenido de manera equilibrada.</p>
+          <h1>EL LOGOTIPO</h1>
+          <style>
+            /* Estilo para el texto específico */
+            .texto-grande {
+                font-size: 15px; /* Cambia el tamaño aquí */
+                color: #428EC6; /* Cambia el color si lo necesitas */
+            }
+        </style>
+          <p class="texto-grande">La composición del logotipo se trata de una combinación de la palabra coreana "uri" que significa nuestro/a y la palabra inglesa "skin" </p>
+          <p class="texto-grande">Tener esta imagen como la representativa de la marca es una manera de dejar claro cuáles son sus valores y su historia </p>
       </div>
   </div>
+ 
+
+
+
+  <style>
+    /* CARROUSEL DE IMÁGENES PARA EL PACKAGING*/
+    .carousel {
+        position: relative;
+        width: 80%;
+        max-width: 9000px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    
+    .carousel-images {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .carousel-images img {
+        width: 100%;
+        display: block;
+    }
+
+   
+    .buttons {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(-50%);
+    }
+
+    .buttons button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .buttons button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+
+<div class="carousel">
+  <div class="carousel-images">
+      <img src="../assets/images/PACKAGING1.png">
+      <img src="../assets/images/PACKAGING2.png">
+      <img src="../assets/images/PACKAGING3.png">
+  </div>
+</div>
+<script>
+
+  const carouselImages = document.querySelector('.carousel-images');
+  const images = document.querySelectorAll('.carousel-images img');
+  let index = 0;
+
+  function moveCarousel() {
+      index++;
+      if (index >= images.length) {
+          index = 0; 
+      }
+      carouselImages.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+ 
+  setInterval(moveCarousel, 3000);
+</script>
 
 
 
 
 
 
-
-
-        <!-- Footer Section -->
+        <!-- FOOTER -->
         <div class="footer">
             <p>&copy; 2025 portfolio </p>
         </div>
