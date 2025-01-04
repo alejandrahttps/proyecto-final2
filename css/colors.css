@@ -1,0 +1,21 @@
+:root {
+    body {
+        background-color: #F5F5F5; /* Fondo blanco crema */
+        
+      }
+      p { color: #428EC6;
+      }
+
+    /* Colores principales */
+    --primary-color: #428EC6;
+    --secondary-color: #F5F5F5;
+    --accent-color: #3472A0;
+
+    /* Colores de fondo */
+    --background-color: #F5F5F5;
+    --card-background: #ffffff;
+
+    /* Colores de texto */
+    --text-color: #428EC6;
+    --muted-text: #3472A0;
+}
