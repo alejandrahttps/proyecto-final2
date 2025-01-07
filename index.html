@@ -76,6 +76,7 @@
      <div class="container">
       <div> <img src="../assets/images/FLECHA.png">
        </div> 
+       
     <p>scroll down</p>   </div>
     <br>
    <br> 
@@ -416,12 +417,89 @@
 <p class="texto-zara">Read Latte es un proyecto enfocado a la creación de una cafetería que mezcla el café con libros de arte. Es un espacio donde las personas pueden leer, comprar y disfrutar de un momento relajante con algo de comer. El estilo con el que se ha realizado la identidad y la comunicación está relacionado con el arte y por eso se usan trazados finos para crear composiciones y dar dinamismo a las piezas.  </p>
 
   <!-- HACER SCROLL -->
+<style>
+  body {
+    margin: 0;
+    background-color: #F5F5F5;
+  }
+
+  /* Contenedor para las dos columnas */
+  .two-columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+  }
+
+  /* Estilos para la columna izquierda */
+  .left-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #F5F5F5;
+    height: 80%; /* Ajusta el tamaño de la columna */
+  }
+
+  .left-column img {
+    position: absolute;
+    width: 100%; /* Ajusta el tamaño de las imágenes al 100% de la columna */
+    height: 100%; /* Asegura que las imágenes ocupen todo el alto */
+    object-fit: cover; /* Mantiene la proporción de la imagen y la cubre sin distorsionar */
+    opacity: 0;
+    animation: fadeInOut 4s infinite;
+  }
+
+  .left-column img:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .left-column img:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  /* Animación para alternar la aparición de las imágenes */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* Estilos para la columna derecha */
+  .right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    height: 80%;
+    border: 0px solid #ccc;
+  }
+</style>
 
 
+<div class="two-columns">
+  <!-- Columna izquierda con animación -->
+  <div class="left-column">
+    <img src="../assets/images/INSTA1.png" alt="Imagen 1">
+    <img src="../assets/images/INSTA2.png" alt="Imagen 2">
+  </div>
+
+  <!-- Columna derecha vacía por ahora -->
+  <div class="right-column"></div>
+</div>
 
         <!-- FOOTER -->
         <div class="footer">
-            <p>&copy; 2025 portfolio </p>
+            <p>2025 portfolio </p>
         </div>
     </div>
 
