@@ -423,7 +423,7 @@
     background-color: #F5F5F5;
   }
 
-  /* Contenedor para las dos columnas */
+ 
   .two-columns {
     display: flex;
     justify-content: center;
@@ -432,7 +432,6 @@
     gap: 20px;
   }
 
-  /* Estilos para la columna izquierda */
   .left-column {
     flex: 1;
     display: flex;
@@ -440,14 +439,14 @@
     align-items: center;
     position: relative;
     background-color: #F5F5F5;
-    height: 80%; /* Ajusta el tamaño de la columna */
+    height: 80%; 
   }
 
   .left-column img {
     position: absolute;
-    width: 100%; /* Ajusta el tamaño de las imágenes al 100% de la columna */
-    height: 100%; /* Asegura que las imágenes ocupen todo el alto */
-    object-fit: cover; /* Mantiene la proporción de la imagen y la cubre sin distorsionar */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     opacity: 0;
     animation: fadeInOut 4s infinite;
   }
@@ -460,7 +459,7 @@
     animation-delay: 2s;
   }
 
-  /* Animación para alternar la aparición de las imágenes */
+  
   @keyframes fadeInOut {
     0% {
       opacity: 0;
@@ -473,18 +472,18 @@
     }
   }
 
-  /* Estilos para la columna derecha */
+
   .right-column {
       flex: 1;
       background-color: #eaeaea;
-      height: 80%; /* Ajusta el tamaño de la columna */
-      overflow-y: scroll; /* Habilita el scroll vertical */
+      height: 80%;
+      overflow-y: scroll; 
       position: relative;
     }
     .right-column img {
-      width: 100%;     /* Las imágenes ocuparán todo el ancho de la columna */
-      height: 100%;     /* Las imágenes ocuparán un 50% de la altura de la columna */
-      object-fit: cover; /* Las imágenes mantienen su proporción sin distorsionar */
+      width: 100%;     
+      height: 100%;     
+      object-fit: cover; 
     }
 
   
@@ -529,10 +528,15 @@
   <div class=".centrada3">
       <img class="centrada3" src="../assets/images/ROMEOYJULIETA.jpg" >
   </div>
-  
+</style>
+<p class="textocentrado">Estos carteles han sido creados con el fin de poder publicitar diferentes obras que se presentan en el National Theatre de Londres.</p>
+<p class="textocentrado">Sigue un estilo inspirado en las entradas físicas de teatro con un estilo que recuerda a la Antigua Grecia.</p>
+</style>
   
   <br><br>
   <br><br>
+
+   <!-- SCROLL HORIZONTAL -->
 
 
 <style>
@@ -543,25 +547,25 @@
       display: flex;
       justify-content: center;
       align-items: center; 
+      
     }
 
-    /* Contenedor del scroll horizontal */
     .scroll-container {
-      width: 100%; /* 80% del ancho de la pantalla */
-      max-width: 100% ; /* Limita el tamaño máximo del contenedor */
-      overflow-x: scroll; /* Habilita el scroll horizontal */
-      white-space: nowrap; /* Evita el salto de línea */
-      display: flex; /* Usamos flexbox para alinear las imágenes horizontalmente */
+      width: 100%; 
+      max-width: 100% ; 
+      overflow-x: scroll; 
+      white-space: nowrap; 
+      display: flex; 
       justify-content: flex-start;
       padding: 10px 0;
     }
 
-    /* Estilo para las imágenes */
+   
     .scroll-container img {
-      width: 100vw;  /* Las imágenes ocupan la mitad del ancho de la pantalla */
-      height: 100vh; /* Las imágenes ocupan la mitad del alto de la pantalla */
-      object-fit: cover; /* Mantiene la proporción sin distorsionar */
-      margin-right: 20px; /* Espacio entre las imágenes */
+      width: 100vw;  
+      height: 100vh; 
+      object-fit: cover;
+      margin-right: 20px; 
     }
   </style>
 
@@ -572,9 +576,23 @@
   <img src="../assets/images/DORIAN.jpg" alt="Imagen 3">
 </div>
 
-        <!-- FOOTER -->
+
+<!-- ANIMACIÓN DE TEXTO DE MUCHAS GRACIAS -->
+
+<div style="text-align: center;">
+  <img id="PRIMERA" src="../assets/images/SOBREFINAL.png" width="60%"; height="auto">
+</div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+
         <div class="footer">
-            <p>2025 portfolio </p>
+            <p> *Alejandra : 2025 portfolio </p>
         </div>
     </div>
 
