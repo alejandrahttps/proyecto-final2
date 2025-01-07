@@ -475,14 +475,19 @@
 
   /* Estilos para la columna derecha */
   .right-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F5F5F5;
-    height: 80%;
-    border: 0px solid #ccc;
-  }
+      flex: 1;
+      background-color: #eaeaea;
+      height: 80%; /* Ajusta el tamaño de la columna */
+      overflow-y: scroll; /* Habilita el scroll vertical */
+      position: relative;
+    }
+    .right-column img {
+      width: 100%;     /* Las imágenes ocuparán todo el ancho de la columna */
+      height: 100%;     /* Las imágenes ocuparán un 50% de la altura de la columna */
+      object-fit: cover; /* Las imágenes mantienen su proporción sin distorsionar */
+    }
+
+  
 </style>
 
 
@@ -494,7 +499,11 @@
   </div>
 
   <!-- Columna derecha vacía por ahora -->
-  <div class="right-column"></div>
+  <div class="right-column">
+    <img src="../assets/images/POSTER1.png" alt="Imagen 1">
+    <img src="../assets/images/POSTER2.png" alt="Imagen 2">
+    <img src="../assets/images/POSTER3.png"alt="Imagen 3">
+  </div>
 </div>
 
         <!-- FOOTER -->
